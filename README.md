@@ -16,7 +16,7 @@ https://joshdavilasnhu.github.io/joshdavilaSNHU/
   - [Enhancement 1: Software Design & Engineering](#enhancement-1-software-design--engineering)
   - [Enhancement 2: Algorithms & Data Structures](#enhancement-2-algorithms--data-structures)
   - [Enhancement 3: Databases](#enhancement-3-databases)
-  - 
+    
 ---
 
 ## Professional Self-Assessment
