@@ -80,15 +80,16 @@ The planned improvements across categories included:
 
 ## Artifacts
 
-### Original Artifact
-- `artifacts/original/TreasureMaze_v1_original.py`  *(original baseline)*
+### Original
+[Original TreasureMaze (v4)](artifacts/original/TreasureMaze_v1_original.py)
 
-### Enhanced Artifact
-- `artifacts/enhanced/TreasureMaze_v6_JoshDavila.py` *(enhanced across milestones)*
-
+### Enhanced
+[Enhanced TreasureMaze (v6)](artifacts/enhanced/TreasureMaze_v6_JoshDavila.py)
 ---
 
 ## Enhancement Narratives
+
+[Enhancement One – Software Design](narratives/3-2 Milestone Two_ Enhancement One_ Software Design and Engineering.docx)
 
 ### Enhancement 1: Software Design & Engineering
 **What it is:**  
@@ -108,6 +109,9 @@ Enhancing this artifact reinforced how small structural improvements can make co
 ---
 
 ### Enhancement 2: Algorithms & Data Structures
+
+[Enhancement Two – Algorithms](narratives/4-2 Milestone Three_ Enhancement Two_ Algorithms and Data Structure.docx)
+
 **What I improved:**
 - Added a **precomputed adjacency graph** for maze movement (neighbors for each free cell)
 - Implemented **BFS shortest path** to the treasure
@@ -122,6 +126,9 @@ This enhancement made the artifact feel more “computer science”—modeling t
 ---
 
 ### Enhancement 3: Databases
+
+[Enhancement Three – Databases](narratives/5-2 Milestone Four_ Enhancement Three_ Databases_JoshDavila.docx)
+
 For this milestone I added **optional SQLite logging** to capture experiment runs and moves:
 - A `runs` table stores basic run metadata
 - A `moves` table stores each step’s position, action, reward, and timestamp
