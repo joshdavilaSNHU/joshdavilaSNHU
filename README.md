@@ -8,7 +8,6 @@ https://joshdavilasnhu.github.io/joshdavilaSNHU/
 ---
 
 ## Table of Contents
-- [GitHub Pages (ePortfolio Site)](#github-pages-eportfolio-site)
 - [Professional Self-Assessment](#professional-self-assessment)
 - [Informal Code Review](##informal-code-review-(video-skipped))
 - [Artifacts](#artifacts)
