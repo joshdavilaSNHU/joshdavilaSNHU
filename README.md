@@ -9,7 +9,7 @@ https://joshdavilasnhu.github.io/joshdavilaSNHU/
 
 ## Table of Contents
 - [Professional Self-Assessment](#professional-self-assessment)
-- [Informal Code Review](##informal-code-review-(video-skipped))
+- [Informal Code Review](#informal-code-review-video-skipped)
 - [Artifacts](#artifacts)
 - [Enhancement Narratives](#enhancement-narratives)
   - [Enhancement 1: Software Design & Engineering](#enhancement-1-software-design--engineering)
