@@ -72,7 +72,7 @@ The planned improvements across categories included:
 
 ## Enhancement Narratives
 
-[Enhancement One – Software Design](narratives/3-2 Milestone Two_ Enhancement One_ Software Design and Engineering.docx)
+[Enhancement One – Software Design](https://github.com/joshdavilaSNHU/joshdavilaSNHU/blob/main/narratives/3-2%20Milestone%20Two_%20Enhancement%20One_%20Software%20Design%20and%20Engineering.docx)
 
 ### Enhancement 1: Software Design & Engineering
 **What it is:**  
@@ -93,7 +93,7 @@ Enhancing this artifact reinforced how small structural improvements can make co
 
 ### Enhancement 2: Algorithms & Data Structures
 
-[Enhancement Two – Algorithms](narratives/4-2 Milestone Three_ Enhancement Two_ Algorithms and Data Structure.docx)
+[Enhancement Two – Algorithms](https://github.com/joshdavilaSNHU/joshdavilaSNHU/blob/main/narratives/4-2%20Milestone%20Three_%20Enhancement%20Two_%20Algorithms%20and%20Data%20Structure.docx)
 
 **What I improved:**
 - Added a **precomputed adjacency graph** for maze movement (neighbors for each free cell)
@@ -110,7 +110,7 @@ This enhancement made the artifact feel more “computer science”—modeling t
 
 ### Enhancement 3: Databases
 
-[Enhancement Three – Databases](narratives/5-2 Milestone Four_ Enhancement Three_ Databases_JoshDavila.docx)
+[Enhancement Three – Databases](https://github.com/joshdavilaSNHU/joshdavilaSNHU/blob/main/narratives/5-2%20Milestone%20Four_%20Enhancement%20Three_%20Databases_JoshDavila.docx)
 
 For this milestone I added **optional SQLite logging** to capture experiment runs and moves:
 - A `runs` table stores basic run metadata
