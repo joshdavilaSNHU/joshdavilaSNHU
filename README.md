@@ -3,13 +3,13 @@
 ## Portfolio Overview
 
 This repository contains my CS 499 capstone ePortfolio materials, including:
-- An **informal code review** (text version)
+- An **informal code review** 
 - The **original and enhanced artifact(s)**
 - **Narratives** describing enhancements in:
   - Software Design & Engineering
   - Algorithms & Data Structures
   - Databases
-- A **professional self-assessment** (draft content included below)
+- A **professional self-assessment** 
 
 My primary artifact is **TreasureMaze.py**, a small grid-maze environment where an agent (“pirate”) navigates toward a treasure goal.
 
@@ -32,8 +32,6 @@ My primary artifact is **TreasureMaze.py**, a small grid-maze environment where 
 
 ## GitHub Pages (ePortfolio Site)
 
-PUT THIS HERE: Paste your GitHub Pages URL once it’s live.
-
 - **ePortfolio Home:** [LINK HERE]
 - **Code Review Page/Section:** [LINK HERE]
 - **Artifacts Page/Section:** [LINK HERE]
@@ -43,5 +41,4 @@ PUT THIS HERE: Paste your GitHub Pages URL once it’s live.
 
 ## Repository Structure
 
-PUT THIS HERE: Use this layout if you want things clean and easy to navigate.
 
