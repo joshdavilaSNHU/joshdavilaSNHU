@@ -2,7 +2,7 @@
 
 ## Live ePortfolio
 
-🔗 **GitHub Pages Site:**  
+**GitHub Pages Site:**  
 https://joshdavilasnhu.github.io/joshdavilaSNHU/
 
 ---
