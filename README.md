@@ -1,58 +1,41 @@
 # CS 499 ePortfolio — Josh Davila
 
-## Portfolio Overview
+## Live ePortfolio
 
-This repository contains my CS 499 capstone ePortfolio materials, including:
-- An **informal code review** 
-- The **original and enhanced artifact(s)**
-- **Narratives** describing enhancements in:
-  - Software Design & Engineering
-  - Algorithms & Data Structures
-  - Databases
-- A **professional self-assessment** 
-
-My primary artifact is **TreasureMaze.py**, a small grid-maze environment where an agent (“pirate”) navigates toward a treasure goal.
+🔗 **GitHub Pages Site:**  
+https://joshdavilasnhu.github.io/joshdavilaSNHU/
 
 ---
 
 ## Table of Contents
 - [GitHub Pages (ePortfolio Site)](#github-pages-eportfolio-site)
-- [Repository Structure](#repository-structure)
-- [Informal Code Review (Text Version)](#informal-code-review-text-version)
+- [Professional Self-Assessment](#professional-self-assessment)
+- [Informal Code Review](##informal-code-review-(video-skipped))
 - [Artifacts](#artifacts)
 - [Enhancement Narratives](#enhancement-narratives)
   - [Enhancement 1: Software Design & Engineering](#enhancement-1-software-design--engineering)
   - [Enhancement 2: Algorithms & Data Structures](#enhancement-2-algorithms--data-structures)
   - [Enhancement 3: Databases](#enhancement-3-databases)
-- [How to Run / Use TreasureMaze](#how-to-run--use-treasuremaze)
-- [Planned Final Enhancements (Status)](#planned-final-enhancements-status)
-- [Professional Self-Assessment (Draft)](#professional-self-assessment-draft)
-
+  - 
 ---
 
-## GitHub Pages (ePortfolio Site)
+## Professional Self-Assessment
 
-- **ePortfolio Home:** [LINK HERE]
-- **Code Review Page/Section:** [LINK HERE]
-- **Artifacts Page/Section:** [LINK HERE]
-- **Narratives Page/Section:** [LINK HERE]
+Throughout my coursework in the Computer Science program, I have developed a strong technical foundation across software engineering, algorithms, databases, and secure development practices. Completing the capstone project and building this ePortfolio allowed me to reflect on my growth while demonstrating my ability to enhance, analyze, and improve real code artifacts in a professional and structured manner.
 
----
+During the program, I strengthened my ability to collaborate in structured environments by documenting design decisions, incorporating instructor feedback, and refining artifacts across multiple milestones. While many assignments were completed individually, the program emphasized clear communication with stakeholders through written documentation, structured code reviews, and professional justification of technical decisions. These experiences improved my ability to communicate complex technical concepts clearly and concisely to both technical and non-technical audiences.
 
-## Repository Structure
+From an algorithmic perspective, I gained practical experience implementing and analyzing data structures and efficiency trade-offs. In the TreasureMaze artifact, I enhanced the project by modeling the maze as a graph and implementing a breadth-first search (BFS) algorithm to compute the shortest path. This improvement demonstrates my understanding of graph traversal, time complexity considerations, and structured problem solving using established computer science principles.
 
-/ (repo root)
-README.md
-/artifacts
-/original
-TreasureMaze_v4_JoshDavila.py
-/enhanced
-TreasureMaze_v6_JoshDavila.py
-/narratives
-MilestoneTwo_EnhancementOne_SoftwareDesign.docx
-MilestoneThree_EnhancementTwo_Algorithms.docx
-MilestoneFour_EnhancementThree_Databases.docx
-Professional_Self_Assessment.docx
+In the area of software engineering and design, I improved the modular structure, input validation, and overall maintainability of the artifact. I reinforced best practices such as defensive programming, consistent state handling, and clear separation of responsibilities within the class design. These changes increased reliability and reduced logical fragility within the system.
+
+For database integration, I implemented optional SQLite logging to persist run data and movement history. This enhancement demonstrates my understanding of relational database structure, schema design, and parameterized queries to reduce security risks such as SQL injection. It also shows my ability to extend a standalone application into a data-aware system capable of storing and exporting structured information.
+
+Security awareness has become an integral part of my development mindset. Throughout the program, I learned to anticipate potential misuse, validate inputs, apply safer query handling techniques, and minimize unintended side effects within software systems. These principles were applied in the database enhancement and reinforced across improvements in input validation and error handling.
+
+Collectively, the artifacts in this portfolio represent growth across three core areas of computer science: software design and engineering, algorithms and data structures, and databases. Each enhancement builds upon the previous version of the artifact, demonstrating my ability to iteratively evaluate, improve, and document computing solutions while considering trade-offs in design, efficiency, and maintainability.
+
+This portfolio reflects not only my technical competency but also my ability to approach software development systematically, communicate professionally, and apply computing principles to produce structured, secure, and maintainable solutions.
 
 ---
 
@@ -81,7 +64,7 @@ The planned improvements across categories included:
 ## Artifacts
 
 ### Original
-[Original TreasureMaze (v4)](artifacts/original/TreasureMaze_v1_original.py)
+[Original TreasureMaze](artifacts/original/TreasureMaze_v1_original.py)
 
 ### Enhanced
 [Enhanced TreasureMaze (v6)](artifacts/enhanced/TreasureMaze_v6_JoshDavila.py)
@@ -137,60 +120,3 @@ For this milestone I added **optional SQLite logging** to capture experiment run
 
 **Why I included this:**
 This demonstrates persistence, simple schema design, and secure DB interaction—useful for showing how results can be tracked and reviewed.
-
----
-
-## How to Run / Use TreasureMaze
-
-### Example without Database
-```python
-from TreasureMaze_v6_JoshDavila import TreasureMaze
-
-maze = [
-    [1.0, 1.0, 0.0],
-    [1.0, 1.0, 1.0],
-    [0.0, 1.0, 1.0],
-]
-
-env = TreasureMaze(maze, pirate=(0, 0))
-state = env.observe()
-
-# Take an action (0=LEFT, 1=UP, 2=RIGHT, 3=DOWN)
-envstate, reward, status = env.act(2)
-print(reward, status)
-```
-
-### Example with SQLite Logging Enabled
-```python
-from TreasureMaze_v6_JoshDavila import TreasureMaze
-
-maze = [
-    [1.0, 1.0, 0.0],
-    [1.0, 1.0, 1.0],
-    [0.0, 1.0, 1.0],
-]
-
-env = TreasureMaze(maze, pirate=(0, 0), db_path="treasuremaze_runs.db")
-env.start_run()
-
-# small demo loop
-for action in [2, 3, 2, 3]:
-    envstate, reward, status = env.act(action)
-    if status != "not_over":
-        break
-
-env.end_run()
-
-# Inspect recent runs
-print(env.get_runs(limit=5))
-```
-
-### Exporting and Backing up
-#### Export a specific run to CSV
-```python
-env.export_run_csv(run_id=1, path="run_1_moves.csv")
-```
-#### Backup the DB file
-```python
-env.backup_db("treasuremaze_runs_backup.db")
-```
