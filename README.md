@@ -67,6 +67,7 @@ The planned improvements across categories included:
 
 ### Enhanced
 [Enhanced TreasureMaze (v6)](artifacts/enhanced/TreasureMaze_v6_JoshDavila.py)
+
 ---
 
 ## Enhancement Narratives
